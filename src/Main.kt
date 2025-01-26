@@ -8,10 +8,8 @@ data class Recipe(
     var categories: MutableList<String> = mutableListOf()
 )
 fun main() {
-    //var recipes = mutableListOf<Recipe>()
+    //val recipes = mutableListOf<Recipe>()
 
-
-    // TEMP DO NOT LEAVE IN ---------------------------
     val recipes = mutableListOf<Recipe>(
         Recipe(
             title = "Spaghetti Bolognese",
@@ -59,11 +57,6 @@ fun main() {
 
 
 
-
-    //TEMP DO NOT LEAVE IN -------------------------------------
-
-
-
     var programLoop = true
     while (programLoop) {
         println("Welcome to the Recipe Organizer!")
@@ -100,7 +93,7 @@ fun addRecipe(recipes: MutableList<Recipe>) {
     var loop = true
     while (loop)
     {
-        println("Adding recipe")
+        println("type exit to go back")
         println("Write the Title of the Recipe:")
         val title = readln()
         if (title == "exit")
@@ -127,6 +120,7 @@ fun addRecipe(recipes: MutableList<Recipe>) {
 
                 if (item == "exit") {
                     loop = false
+                    break
                 }
                 if (item.isBlank())
                 {
@@ -143,7 +137,9 @@ fun addRecipe(recipes: MutableList<Recipe>) {
         addLoop(Catagories,"List Catagories")
 
         recipes.add(Recipe(title, Description, Ingredients, Steps, Catagories))
+        println("Adding recipe")
     }
+
 
 }
 
@@ -306,7 +302,7 @@ fun editRecipe(recipes: MutableList<Recipe>) {
                 }
                 else if (newDescription.isNotBlank())
                 {
-                    choiceRecipe.title = newDescription;
+                    choiceRecipe.description = newDescription;
                 }
                 else {
                     println("Error, no text detected")
@@ -356,7 +352,7 @@ fun chooseRecipe(recipes: MutableList<Recipe>): Int {
         }
         println("type exit to go back")
         println("Choose a Recipe")
-        viewRecipes(recipes)
+        ~(recipes)
 
         val response = readLine()
         if (response?.lowercase() == "exit") {
