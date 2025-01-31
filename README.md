@@ -4,7 +4,6 @@ I created this program to help me learn Kotlin, I don't know many programming la
 
 I created this so that I can turn it into an App, so i can stop having to fumble with my recipe book and have my recipes all over the place. I have like 3 recipes books and i want to reduce that down to this program.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
 
 [Software Demo Video](https://youtu.be/zg1I9pymKe0)
 
@@ -21,8 +20,6 @@ Kotlin is usually used for Android App development and is why i choose to learn 
 - [Traversy Media's Kotlin Course](https://www.youtube.com/watch?v=5flXf8nuq60)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
 
 - Check for User typing strings instead of ints and allowing them to do actions by typing them instead of using the numbers
 - Create a User Interface
